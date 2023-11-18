@@ -1,0 +1,28 @@
+/* general styles */
+*{
+  margin:0;
+}
+a{
+  color:rgb(207, 196, 181);
+  text-decoration: none;
+}
+/* header styles */
+.header{
+  background-color: blue;
+  margin:0;
+  padding:none;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: space-between;
+  /* position: fixed; */
+}
+.nav{
+  display:flex;
+  
+  justify-content: space-between;
+}
+
+/* main section styles */
+
+
+/* footer styles */
