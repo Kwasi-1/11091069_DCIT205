@@ -121,17 +121,33 @@ a{
 
 /* events */
 .events-section{
-  margin: 0 20px;
-  background-color: greenyellow;
+  padding:0 40px 20px;
+  background-color: antiquewhite;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.3fr ;
 }
 .events{
-  padding: 0 10px;
-  height: 300px;
+  margin-top:40px;
+  margin-left: 30px;
+  padding: 100px 40px;
+  background-color: wheat;
+  height: 400px;
 }
+.events-header{
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
 .events-image{
   background-color: rgb(99, 20, 20);
+  width: 100%;
+  height: 100%;
+  
+}
+.events-img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* application section */
