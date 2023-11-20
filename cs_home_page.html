@@ -5,40 +5,54 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0 ">
     <title>UG | Department of Computer Science</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <!-- test -->
-    <div class="bg"></div>
+    <div class="main">
 
-    <!-- header section -->
-    <header>
-      <div class="header">
-        <a href="#" class="logo">
-          <img src="https://dcs.ug.edu.gh/img/comScience_logo.png" alt="ug logo" class="logo ug-logo">
-        </a>
-          
-        <nav class="nav">
-          <a class="nav-links" href="#">HOME</a>
-          <a class="nav-links" href="#">ADDMISSIONS</a>
-          <a class="nav-links" href="#">ABOUT</a>
-          <a class="nav-links" href="#">FAULTY</a>
-          <a class="nav-links" href="#">RESEARCH GROUPS</a>
-        </nav>
-      </div>
-    </header>
+      <!-- navbar -->
+      <div class="navbar">
+        <div class="icon">
+            <a href="#home" class="logo">
+              <img src="https://dcs.ug.edu.gh/img/comScience_logo.png" alt="ug logo" class="logo ug-logo">
+            </a>
+        </div>
 
-    <!-- main body -->
-    <section>
-    <!-- intro section -->
-      <div class="intro">
-        <!-- <img class="intro-img" src="" alt="intro image"> -->
-        <p class="intro-p">Your gateway to <br> world class <br>computer science <br> education</p>
+        <div class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-links" href="#home">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="admissions.html">ADMISSIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="faulty.html">FAULTY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="research.html">RESEARCH</a>
+              </li>
+            </ul>
+
+        </div>
       </div>
-      
-    <!-- test this -->
-      
+
+      <!-- text -->
+      <div class="text">
+        <h1 class="text-header">here, We build thinkers</h1>
+        <p class="intro-p">Your gateway to world class computer science education</p>
+      </div>
+    </div>
+
     <!-- programmes section -->
+    
+
       <div class="programmes-section">
         
         <div class="programmes">
@@ -170,22 +184,14 @@
 
     <!-- footer -->
     <footer>
-      <div class="uuper-footer">
+      <div class="upper-footer">
 
         <!-- contact section -->
         <div class="contact-section">
           <div class="logo-section">
-            <div class="logo">
-              <a href="#">
-                <img src="#" alt="ug logo" class="logo ug-logo">
-              </a>
-            </div>
-            <div>  
-              <a>
-                University <br> of Ghana<br>
-                Department of Computer Science
-              </a>
-            </div>
+            <a href="#" class="logo">
+              <img src="https://dcs.ug.edu.gh/img/comScience_logo.png" alt="ug logo" class="logo ug-logo">
+            </a>
           </div>
           <div class="contact-body">
             <p class="loction">
@@ -220,7 +226,7 @@
           <a class="footer-links" href="#">level 200 & 300 Timetable</a>
           <a class="footer-links" href="#">placemnet for level 200 students</a>
           <a class="footer-links" href="#">student complaint form</a>
-          <a class="footer-links" href="#">RESEARCH GROUPS</a>
+          
         </div>
 
         <!-- news letter -->
@@ -231,34 +237,35 @@
           <input type="email" name="e-mail" >
           <button>--></button>
         </div>
-      </div>
-
-      <!-- mid footer -->
-      <div class="mid-footer">
-        <span></span>  
-          <a class="footer-links facebook-link" href="#">
-            
-          </a>
-        <span>
-          <a class="footer-links twitter-link" href="#">
-            
-          </a>
-        </span>  
-        <span>
-          <a class="footer-links youtube-link" href="#">
-           
-          </a>
-        </span>  
-        <span>
-          <a class="footer-links instagram" href="#">
-            
-          </a>
-        </span>
-      </div>
+      </div>    
       
       <!-- lower footer -->
       <div class="lower-footer">
-        <p>Copyright &copy2023 All rights reserved</p>
+        <div class="copyright">
+          <p>Copyright &copy2023 All rights reserved</p>
+        </div>
+        <div class="socials">
+          <span>
+            <a class="footer-links facebook-link" href="#">
+              
+            </a>
+          </span>  
+          <span>
+            <a class="footer-links twitter-link" href="#">
+              
+            </a>
+          </span>  
+          <span>
+            <a class="footer-links youtube-link" href="#">
+            
+            </a>
+          </span>  
+          <span>
+            <a class="footer-links instagram" href="#">
+              
+            </a>
+          </span>
+        </div>
       </div>
     </footer>
   </body>

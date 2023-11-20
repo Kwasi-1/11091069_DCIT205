@@ -1,51 +1,81 @@
 /* general styles */
 *{
-  margin:0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  /* box-sizing: border-box; */
 }
-a{
-  color:rgb(207, 196, 181);
-  text-decoration: none;
-}
-body{
-  height:100%;
+body, html {
+  height: 100%;
   margin: 0;
 }
-.bg{
-  height: 100%;
+a{
+  color: white;
+  text-decoration: none;
 }
 
-/* header styles */
-.header{
-  background-color:  rgb(199, 223, 94);
-  margin:0;
-  padding:none;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  justify-content: space-between;
-  /* position: fixed; */
+/* landing page */
+.main{
+  
+  background: linear-gradient(to top, rgba(4, 9, 30, 0.5),rgba(4, 9, 30, 0.5)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  position: relative ;
 }
-.logo{
-  width: 300px;
-}
-.nav{
-  display:flex;
-  justify-items: center;
+.navbar{
+  display: flex;
+  padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
 }
-
-/* main section styles */
-
-/* intro section */
-.intro{
-  background-color: rgb(199, 223, 94);
-  height: 500px;
-  font-size: 50px;
-  
+.logo{
+  width: 150px;
 }
-.intro-p{
-  padding-top: 100px;
-  color: gray;
+.nav{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-item{
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+.nav-links{
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-item::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: blue;
+  display: block;
+  transition: 0.45s;
+}
+.nav-item:hover::after{
+  width: 100%;
+}
+
+/* text */
+.text{
+  width: 90%;
+  position: absolute;
+  color:white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-transform: capitalize;
+  text-align: center;
+}
+.text-header{
+  font-size: 2.5em;
 }
 
 /* programmes section */
@@ -105,4 +135,36 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.short-courses{
+
+}
 /* footer styles */
+footer{
+  width: 100%;
+  line-height: 40px;
+}
+.upper-footer{
+  padding: 100px 0px;
+  padding-left: 40px;
+  background-color: rgb(31, 29, 29);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  color: white;
+}
+.footer-links{
+  display: block;
+}
+.logo-section{
+  background-color: rgba(187, 163, 26, 0.726);
+  width:290px;
+  
+  
+}
+
+.lower-footer{
+  /* background-color: rgb(39, 88, 84); */
+  padding: 20px 40px;
+  color: gray;
+}
