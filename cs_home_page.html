@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/a74d48dfe3.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="main">
@@ -192,7 +193,7 @@
       <div class="upper-footer">
 
         <!-- contact section -->
-        <div class="contact-section">
+        <div class="footer-col">
           <div class="logo-section">
             <a href="#" class="logo">
               <img src="https://dcs.ug.edu.gh/img/comScience_logo.png" alt="ug logo" class="logo ug-logo">
@@ -202,20 +203,20 @@
             <p class="loction">
               University of Ghana,Legon Campus <br> Opposite the Department of Mathematics
             </p>
-            <a class="footer-links phone-1" href="#">
+            <p class="phone-1">
               +233(50) 138 2035
-            </a>
-            <a class="footer-links phone-2" href="#">
+            </p>
+            <p class="phone-2">
               +233(55) 914 5698
-            </a>
-            <a class="footer-links email" href="#">
+            </p>
+            <p class="email-id">
               dcs@ug.edu.gh
-            </a>
+            </p>
           </div>
         </div>
 
         <!-- main navigation -->
-        <div class="main-navs">
+        <div class="footer-col">
           <h3>MAIN NAVIGATIONS</h3>
           <a class="footer-links" href="#">HOME</a>
           <a class="footer-links" href="#">ADDMISSIONS</a>
@@ -225,7 +226,7 @@
         </div>
 
         <!-- academics -->
-        <div>
+        <div class="footer-col">
           <h3>ACADEMICS</h3>
           <a class="footer-links" href="#">Academic Calendar</a>
           <a class="footer-links" href="#">level 200 & 300 Timetable</a>
@@ -235,42 +236,46 @@
         </div>
 
         <!-- news letter -->
-        <div class="news-letter_section">
-          <label for="news-letter">
-            Stay update with our latest
-          </label>
-          <input type="email" name="e-mail" >
-          <button>--></button>
+        <div class="footer-col news-letter_section">
+          <h3>News letter</h3>
+          <form>
+            <i class="fa-regular fa-envelope fa-bounce"></i>
+            <input type="email" name="e-mail" id="email" placeholder="Enter your email" required>
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right fa-beat"></i>
+            </button>
+          </form>
+
+          <div class="socials">
+        
+            <a class="socials-links facebook-link" href="#">
+              <i class="fa-brands fa-facebook fa-bounce"></i>
+            </a>
+          
+            <a class="socials-links twitter-link" href="#">
+              <i class="fa-brands fa-twitter fa-bounce"></i>
+            </a>
+         
+            <a class="socials-links youtube-link" href="#">
+              <i class="fa-brands fa-instagram fa-bounce"></i>
+            </a>
+          
+            <a class="socials-links instagram" href="#">
+              <i class="fa-brands fa-youtube fa-bounce"></i>
+            </a>
+          
+        </div>
         </div>
       </div>    
       
+      
+
       <!-- lower footer -->
       <div class="lower-footer">
-        <div class="copyright">
-          <p>Copyright &copy2023 All rights reserved</p>
-        </div>
-        <div class="socials">
-          <span>
-            <a class="footer-links facebook-link" href="#">
-              
-            </a>
-          </span>  
-          <span>
-            <a class="footer-links twitter-link" href="#">
-              
-            </a>
-          </span>  
-          <span>
-            <a class="footer-links youtube-link" href="#">
-            
-            </a>
-          </span>  
-          <span>
-            <a class="footer-links instagram" href="#">
-              
-            </a>
-          </span>
-        </div>
+        
+          <p class="copyright">Copyright &copy2023 All rights reserved</p>
+        
+        
       </div>
     </footer>
   </body>

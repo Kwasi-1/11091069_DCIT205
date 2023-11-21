@@ -167,32 +167,101 @@ a{
 
 }
 /* footer styles */
+body, html {
+  
+  /* margin: 0; */
+  background-color: #eef8ff ;
+}
+.logo{
+  width: 150px;
+  margin-bottom: 30px;
+}
 footer{
-  /* width: 100%; */
-  line-height: 40px;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.upper-footer, .lower-footer{
+  width:85%;
+  margin: auto;
+  
 }
 .upper-footer{
-  padding: 100px 0px;
-  padding-left: 40px;
-  background-color: rgb(31, 29, 29);
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 10px;
-  width: 100%;
-  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.footer-col h3{
+  width: fit content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
 }
 .footer-links{
   display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
 }
-.logo-section{
-  background-color: rgba(187, 163, 26, 0.726);
-  width:290px;
-  
-  
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form .fa-regular{
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input{
+  width:100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+
+}
+form button .fa-solid{
+  font-size: 16px;
+  color: #ccc;
+
+}
+.socials-links{
+  display: inline-block ;
+  text-decoration: none;
+  color: white;
+}
+.socials .fa-brands{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+.copyright{
+  padding: 10px;
 }
 
-.lower-footer{
-  /* background-color: rgb(39, 88, 84); */
-  padding: 20px 40px;
-  color: gray;
-}
