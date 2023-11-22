@@ -13,14 +13,15 @@ a{
   text-decoration: none;
 }
 .main{
-  
-  background: linear-gradient(to top, rgb(0, 9, 61,0.5), rgba(46, 11, 0, 0.5)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   width: 100%;
   position: relative ;
+}
+.home-page{
+  background: linear-gradient(to top, rgb(0, 9, 61,0.5), rgba(46, 11, 0, 0.5)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
+  min-height: 100vh;
 }
 .navbar{
   display: flex;
@@ -66,7 +67,7 @@ a{
 }
 
 /* text */  
-.text{
+.text {
   font-family: Georgia, 'Times New Roman', Times, serif;
   width: 90%;
   position: absolute;
@@ -95,8 +96,8 @@ a{
   transition: 1s;
 }
 .visit-btn:hover{
-  border: 1px solid #2d0b00;
-  background:  #2d0b00;
+  border: 1px solid #f00a06;
+  background:  #f00a06;
 
 }
 .what-we-offer{
@@ -141,36 +142,43 @@ a{
   background-color: rgb(203, 245, 126);
 }
 
-/* events */
+/* events  and about styles*/
 
-.events-section{
-  padding:0 40px 20px;
-  background-color: rgb(250, 245, 245);
-  display: grid;
-  grid-template-columns: 1fr 1.3fr ;
+.about-us, .events-section{
+  width: 80%;
+  margin:auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
-.events{
-  margin-top:40px;
-  margin-left: 30px;
-  padding: 100px 40px;
-  background-color: wheat;
-  height: 200px;
+.about{
+  text-align: center;
 }
-.events-header{
-  text-transform: uppercase;
-  padding-bottom: 10px;
+.row, .events{
+  display: flex;
 }
-.events-image{
-  background-color: rgb(99, 20, 20);
+.about-col, .events-col{
+  flex-basis: 48%;
+  padding: 30px 20px;
+}
+.about-img, .events-img{
   width: 100%;
-  height: 100%;
-  
 }
-.events-img{
-  max-width: 100%;
-  max-height: 100%;
-  /* object-fit: cover; */
+.about-header, .events-header{
+  padding-top: 0;
 }
+.about-body, .events-body{
+  padding: 15px 0 25px;
+}
+.explore-btn{
+  border: 1px solid #f00a06;
+  background: transparent;
+  color:#f00a06;
+}
+.explore-btn:hover{
+  color: white;
+}
+
+/* footer styles */
 footer .logo{
   width: 150px;
   margin-bottom: 30px;
@@ -275,4 +283,12 @@ hr{
 }
 .copyright{
   padding: 10px;
+}
+
+/* other pages */
+.other-page {
+  background: linear-gradient(to top, rgb(0, 9, 61,0.7), rgba(46, 11, 0, 0.7)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
+  height: 50vh;
+  text-align: center;
+  color: white;
 }
