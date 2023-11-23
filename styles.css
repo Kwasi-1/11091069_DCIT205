@@ -30,12 +30,13 @@ a{
   align-items: center;
 }
 .icon{
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 10px;
+  background: #9b9a9a;
   
 }
 .icon:hover{
-  background: #9b9a9a;
+  /* background: #9b9a9a; */
 }
 .logo{
   width: 150px;
@@ -97,7 +98,7 @@ a{
   font-size: 13px ;
   background: transparent;
   position:relative;
-  transition: 1s;
+  transition: 0.5s;
 }
 .visit-btn:hover{
   border: 1px solid #c98c1b;
@@ -123,6 +124,7 @@ a{
   background-color: rgb(238, 250, 215);
   margin: 20px;
   border-radius: 10px;
+  transition: 0.5s;
 }
 .programmes-header{
   padding: 30px;
@@ -145,8 +147,9 @@ a{
   display: block;
   padding-top: 15px;
 }
-.programmes:hover{
-  background-color: rgb(203, 245, 126);
+.programmes:hover, .active{
+  background-color: rgb(81, 97, 52);
+  transform: scale(1.05);
 }
 
 /* events  and about styles*/
@@ -223,6 +226,7 @@ a{
 }
 .short-course:hover{
   transform: scale(1.05);
+  /* background-color: rgb(37, 62, 68); */
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
 .short-course img{
@@ -368,6 +372,35 @@ hr{
 
 
 /* about page */
+
+
+/* short courses  */
+.application{
+  padding-bottom: 80px;
+}
+.appli-f{
+  padding: 50px 0;
+  /* padding-top: 50px; */
+}
+.appli-f h1{
+  font-size: 3.5rem;
+}
+.appli-f p{
+  padding: 30px 0;
+}
+.application .visit-btn{
+  margin:10px;
+  background-color: rgba(0, 0, 255, 0.473);
+  border: 1px solid rgba(0, 0, 255, 0.473);
+}
+.application .visit-btn:hover{
+  transform: scale(1.08);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.prog-nav{
+  text-align: center;
+  font-size: 15px;
+}
 
 
 @media(max-width: 700px){
