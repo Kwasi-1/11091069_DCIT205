@@ -33,10 +33,11 @@ a{
   border: 2px solid black;
   border-radius: 10px;
   background: #9b9a9a;
-  
+  transition: 0.4s;
 }
 .icon:hover{
   /* background: #9b9a9a; */
+  opacity: 0.5;
 }
 .logo{
   width: 150px;
@@ -175,9 +176,9 @@ a{
   padding: 30px 20px;
   height: 400px;
 }
-.events-col .fa-sharp{
-  font-size: 70px;
-  color: blue;
+.events-col .fa-solid{
+  font-size: 65px;
+  color: rgb(10, 10, 10);
 }
 .about-img, .events-img{
   width: 100%;
@@ -420,8 +421,13 @@ hr{
   border: 1px solid rgba(0, 0, 255, 0.473);
 }
 .application .visit-btn:hover{
-  transform: scale(1.08);
+  /* transform: scale(1.08); */
+  background-color: rgba(0, 0, 255, 0.9);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.appli-f .visit-btn{
+  /* font-weight: bold; */
+  font-size: 18px;
 }
 .prog-nav{
   text-align: center;
