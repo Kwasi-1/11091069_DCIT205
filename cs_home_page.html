@@ -17,31 +17,34 @@
       <!-- navbar -->
       <div class="navbar">
         <div class="icon">
-            <a href="cs-home_page.html" class="logo">
+            <a href="cs_home_page.html" class="logo">
               <img src="https://dcs.ug.edu.gh/img/comScience_logo.png" alt="ug logo" class="logo ug-logo">
             </a>
         </div>
 
-        <div class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-links" href="cs_home_page.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-links" href="admissions.html">ADMISSIONS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-links" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-links" href="faulty.html">FAULTY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-links" href="research.html">RESEARCH</a>
-              </li>
-            </ul>
-
+        <div class="nav" id="navs">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-links" href="cs_home_page.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" href="faulty.html">FAULTY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" href="research.html">RESEARCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+         
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </div>
 
       <!-- text -->
@@ -73,29 +76,29 @@
         </div> 
         <div class="programmes">
           <div class="programmes-header">
-            <a class=programmes-header_link href="#">Undergraduate programmes</a> 
+            <a class=programmes-header_link href="undergraduate.html">Undergraduate programmes</a> 
           </div>
           <div class="programmes-body">
-            <a class="programmes-link" href="#" >Open the door to sough-after technology careers with a world bachelor of science in Computer Science degree</a>
-            <a class="programmes-link read-more_link" href="#">Read more..</a>          
+            <a class="programmes-link" href="undergraduate.html" >Open the door to sough-after technology careers with a world bachelor of science in Computer Science degree</a>
+            <a class="programmes-link read-more_link" href="undergraduate.html">Read more..</a>          
           </div>
         </div> 
         <div class="programmes">
           <div class="programmes-header">
-            <a class=programmes-header_link href="#">MPhil and Msc programmes</a> 
+            <a class=programmes-header_link href="MPhil.html">MPhil and Msc programmes</a> 
           </div>
           <div class="programmes-body">
-            <a class="programmes-link" href="#" >embrace world class graduate education with unique blend of cutting-edge research and industry experience.</a>
-            <a class="programmes-link read-more_link" href="#">Read more..</a>          
+            <a class="programmes-link" href="MPhil.html" >embrace world class graduate education with unique blend of cutting-edge research and industry experience.</a>
+            <a class="programmes-link read-more_link" href="MPhil.html">Read more..</a>          
           </div>
         </div> 
         <div class="programmes">
           <div class="programmes-header">
-            <a class=programmes-header_link href="#">PhD programmes</a> 
+            <a class=programmes-header_link href="PhD.html">PhD programmes</a> 
           </div>
           <div class="programmes-body">
-            <a class="programmes-link" href="#" >Our PHDs lead the effort to extend the boundaries of knowledge through quality and indrustry relevant research.</a>
-            <a class="programmes-link read-more_link" href="#">Read more..</a>          
+            <a class="programmes-link" href="PhD.html" >Our PHDs lead the effort to extend the boundaries of knowledge through quality and indrustry relevant research.</a>
+            <a class="programmes-link read-more_link" href="PhD.html">Read more..</a>          
           </div>
         </div> 
       </div>
@@ -106,14 +109,15 @@
     <section class="events-section">
         <div class="events">
           <div class="events-col">
-    
-            <i class="fa-sharp fa-solid fa-calendar-days fa-2xl"></i>
-            <h1 class="events-header">events</h1>
+            <div class="events-header row" >
+              <i class="fa-sharp fa-solid fa-calendar-days  "></i>
+              <h1 class="events-h ">events</h1>
+            </div>
             <p class="events-body"> 
               Programmes, Seminars and events we organised by the department.
             </p>
             <p class="events-body below">To view upcoming and ongoing events click the link below</p> 
-            <a class="visit-btn explore-btn" href="#">EXPLORE NOW</a>
+            <a class="visit-btn explore-btn" href="events.html">EXPLORE NOW</a>
           </div>
           <div class="events-col">
             <img class="events-img" src="https://www.engage.emory.edu/s/1705/images/gid3/editor/theo/heritage_ball/black_seminarians_day_-_2019.jpg" alt="events-image">
@@ -293,5 +297,9 @@
         
       </div>
     </footer>
+    
+    <!-- javascript -->
+
+    <script src="myscript.js"></script>
   </body>
 </html>

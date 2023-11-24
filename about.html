@@ -18,31 +18,34 @@
       <!-- navbar -->
       <div class="navbar">
         <div class="icon">
-            <a href="#home" class="logo">
+            <a href="cs_home_page.html" class="logo">
               <img src="https://dcs.ug.edu.gh/img/comScience_logo.png" alt="ug logo" class="logo ug-logo">
             </a>
         </div>
 
-        <div class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-links" href="cs_home_page.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-links" href="admissions.html">ADMISSIONS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-links" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-links" href="faulty.html">FAULTY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-links" href="research.html">RESEARCH</a>
-              </li>
-            </ul>
-
+        <div class="nav" id="navs">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-links" href="cs_home_page.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" href="faulty.html">FAULTY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" href="research.html">RESEARCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+         
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </div>
 
       <!-- text -->
@@ -85,7 +88,7 @@
           <img src="https://www.iona.edu/sites/default/files/styles/landscape/public/2020-05/primary-images/BSU-900x600.jpg?itok=Dtk0pwg0" alt="about image" class="about-img">
         </div>
         <div class="about-col">
-          <h1 class="about-header">Our Organization</h1>
+          <h1 class="about-h">Our Organization</h1>
           <p class="about-body">
             The University of Ghana is one of the Africa's most preeminent public universities. Our impact on individuals, our region and the world is profound. whether we are launching young people into a boundless future or confronting the grand challenges of our time through dauntless research. UG educates more than 38,000students annually, with approximately 2.64% being computer science students. We turn ideas into impact and transform the world around us. For more about our impact, visit our news site, UG News
           </p>
@@ -135,95 +138,100 @@
 
     </section>
 
-        <!-- footer -->
-        <footer>
-          <div class="upper-footer">
-    
-            <!-- contact section -->
-            <div class="footer-col">
-              <div class="logo-section">
-                <a href="#" class="logo">
-                  <img src="https://dcs.ug.edu.gh/img/comScience_logo.png" alt="ug logo" class="logo ug-logo">
-                </a>
-              </div>
-              <div class="contact-body">
-                <p class="loction">
-                  University of Ghana,Legon Campus <br> Opposite the Department of Mathematics
-                </p>
-                <p class="phone-1">
-                  +233(50) 138 2035
-                </p>
-                <p class="phone-2">
-                  +233(55) 914 5698
-                </p>
-                <p class="email-id">
-                  dcs@ug.edu.gh
-                </p>
-              </div>
-            </div>
-    
-            <!-- main navigation -->
-            <div class="footer-col">
-              <h3>MAIN NAVIGATIONS</h3>
-              <a class="footer-links" href="#">HOME</a>
-              <a class="footer-links" href="#">ADDMISSIONS</a>
-              <a class="footer-links" href="#">ABOUT</a>
-              <a class="footer-links" href="#">FAULTY</a>
-              <a class="footer-links" href="#">RESEARCH GROUPS</a>
-            </div>
-    
-            <!-- academics -->
-            <div class="footer-col">
-              <h3>ACADEMICS</h3>
-              <a class="footer-links" href="#">Academic Calendar</a>
-              <a class="footer-links" href="#">level 200 & 300 Timetable</a>
-              <a class="footer-links" href="#">placemnet for level 200 students</a>
-              <a class="footer-links" href="#">student complaint form</a>
-              
-            </div>
-    
-            <!-- news letter -->
-            <div class="footer-col news-letter_section">
-              <h3>News letter</h3>
-              <form>
-                <i class="fa-regular fa-envelope fa-bounce"></i>
-                <input type="email" name="e-mail" id="email" placeholder="Enter your email" required>
-                <button type="submit">
-                  <i class="fa-solid fa-arrow-right fa-beat"></i>
-                </button>
-              </form>
-    
-              <div class="socials">
-            
-                <a class="socials-links facebook-link" href="#">
-                  <i class="fa-brands fa-facebook "></i>
-                </a>
-              
-                <a class="socials-links twitter-link" href="#">
-                  <i class="fa-brands fa-twitter "></i>
-                </a>
-             
-                <a class="socials-links youtube-link" href="#">
-                  <i class="fa-brands fa-instagram "></i>
-                </a>
-              
-                <a class="socials-links instagram" href="#">
-                  <i class="fa-brands fa-youtube "></i>
-                </a>
-              
-            </div>
-            </div>
-          </div>    
-          <hr>
-          
-    
-          <!-- lower footer -->
-          <div class="lower-footer">
-            
-              <p class="copyright">Copyright &copy2023 All rights reserved</p>
-            
-            
+  <!-- footer -->
+    <footer>
+      <div class="upper-footer">
+
+        <!-- contact section -->
+        <div class="footer-col">
+          <div class="logo-section">
+            <a href="#" class="logo">
+              <img src="https://dcs.ug.edu.gh/img/comScience_logo.png" alt="ug logo" class="logo ug-logo">
+            </a>
           </div>
-        </footer>
+          <div class="contact-body">
+            <p class="loction">
+              University of Ghana,Legon Campus <br> Opposite the Department of Mathematics
+            </p>
+            <p class="phone-1">
+              +233(50) 138 2035
+            </p>
+            <p class="phone-2">
+              +233(55) 914 5698
+            </p>
+            <p class="email-id">
+              dcs@ug.edu.gh
+            </p>
+          </div>
+        </div>
+
+        <!-- main navigation -->
+        <div class="footer-col">
+          <h3>MAIN NAVIGATIONS</h3>
+          <a class="footer-links" href="#">HOME</a>
+          <a class="footer-links" href="#">ADDMISSIONS</a>
+          <a class="footer-links" href="#">ABOUT</a>
+          <a class="footer-links" href="#">FAULTY</a>
+          <a class="footer-links" href="#">RESEARCH GROUPS</a>
+        </div>
+
+        <!-- academics -->
+        <div class="footer-col">
+          <h3>ACADEMICS</h3>
+          <a class="footer-links" href="#">Academic Calendar</a>
+          <a class="footer-links" href="#">level 200 & 300 Timetable</a>
+          <a class="footer-links" href="#">placemnet for level 200 students</a>
+          <a class="footer-links" href="#">student complaint form</a>
+          
+        </div>
+
+        <!-- news letter -->
+        <div class="footer-col news-letter_section">
+          <h3>News letter</h3>
+          <form>
+            <i class="fa-regular fa-envelope fa-bounce"></i>
+            <input type="email" name="e-mail" id="email" placeholder="Enter your email" required>
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right fa-beat"></i>
+            </button>
+          </form>
+
+          <div class="socials">
+        
+            <a class="socials-links facebook-link" href="#">
+              <i class="fa-brands fa-facebook "></i>
+            </a>
+          
+            <a class="socials-links twitter-link" href="#">
+              <i class="fa-brands fa-twitter "></i>
+            </a>
+          
+            <a class="socials-links youtube-link" href="#">
+              <i class="fa-brands fa-instagram "></i>
+            </a>
+          
+            <a class="socials-links instagram" href="#">
+              <i class="fa-brands fa-youtube "></i>
+            </a>
+          
+        </div>
+        </div>
+      </div>    
+      <hr>
+      
+
+      <!-- lower footer -->
+      <div class="lower-footer">
+        
+          <p class="copyright">Copyright &copy2023 All rights reserved</p>
+        
+        
+      </div>
+    </footer>
+
+   
+    <!-- javascript -->
+
+    <script src="myscript.js"></script>
   </body>
 </html>     
