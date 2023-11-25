@@ -442,7 +442,7 @@ hr{
   text-align: center;
 }
 .events-page .row{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
   margin: auto;
   border-radius: 5px;
@@ -461,18 +461,41 @@ hr{
   padding-left: 30px;
   /* padding-top: 70px; */
 }
-/* .scroll{
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-  
+.coursel-contanier{
+  /* width: 80%; */
+  margin: auto;
+}
+.slide{
+  display: grid;
+  grid-template-columns: 100% 100% 100% ;
+  column-gap: 50px;
+  width: 100%;
+  border-radius: 5px;
+  scroll-snap-type: x mandatory;
+  border: 1px solid black;
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  /* height: 500px; */
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.slide::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slide::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slide::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slide .row{
+  /* display: inline-block !important; */
+  scroll-snap-align: start;
+  width:100%
 }
 
-.scroll .row {
- padding: 0 10px; 
-  display: inline-block;
-} */
 
 
 /*-------- contact us page --------- */
@@ -486,7 +509,7 @@ hr{
   width: 100%;
 }
 .contact-us{
-  width: 85%;
+  width: 80%;
   margin:auto;
   margin-bottom: 80px;
 }
@@ -531,6 +554,12 @@ hr{
   background: transparent;
   position:relative;
 }
+
+/* ---------------------- RESEARCH PAGE ---------------------- */
+.research-slide{
+  grid-template-columns: 100% 100% !important;
+}
+
 
 /* ------------------- MEDIA QUERIES ------------------------ */
 
