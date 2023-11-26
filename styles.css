@@ -13,12 +13,12 @@ a{
   text-decoration: none;
 }
 .home-page{
-  background: linear-gradient(to right, rgb(0, 9, 61,0.5), rgba(46, 11, 0, 0.5)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
+  background: linear-gradient(to right, rgb(0, 9, 61,0.7), rgba(46, 11, 0, 0.7)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
   min-height: 100vh;
   width: 100%;
-  /* background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   position: relative ;
 
 }
@@ -102,8 +102,8 @@ a{
   transition: 0.5s;
 }
 .visit-btn:hover{
-  border: 1px solid #c98c1b;
-  background: #c98c1b;
+  border: 1px solid #f44335;
+  background: #f44335;
 
 }
 .navbar .fa-solid{
@@ -397,7 +397,9 @@ hr{
 /*---------------short courses-----------------*/
 .application{
   padding-bottom: 80px;
+  
 }
+
 .appli-f{
   padding: 50px 0;
   color: white;
@@ -568,6 +570,9 @@ hr{
 
 /* ----------------------- UNDERGRADUATE PAGE --------------------- */
 
+.application table{
+  text-align: left;
+}
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -591,14 +596,27 @@ hr{
 .phd-h{
   padding-top: 40px;
 }
-/* .courses{ */
-  padding: 40px;
-}
+
 .u-courses .container{
   padding: 40px;
 }
 .courses a{
   color: #4b0808;
+  padding: 15px;
+  width: 100%;
+  
+  /* position: relative; */
+}
+dt .active{
+  background: transparent;
+  
+}
+.courses dt{
+  padding: 15px;
+  margin: 5px 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(81, 97, 52);
 }
 
 
