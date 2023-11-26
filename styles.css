@@ -213,12 +213,13 @@ a{
   margin-top:40px;
 }
 
-/* short courses  */
+/*------------------short courses---------------------  */
+
 .prog-nav .programmes-header{
   padding: 25px;
 }
 .programmes-header_link{
-  padding:25px 0;
+  padding:25px 8px;
 }
 .short{
   background-color: aliceblue;
@@ -408,11 +409,14 @@ hr{
   border-radius: 10px;
 }
 .appli-f h1{
-  font-size: 3.5rem;
+  font-size: 3rem;
+  text-transform: capitalize;
 }
 .appli-f p{
-  padding: 30px 0;
-  
+  padding: 15px 0;
+  width:70%;
+  margin: auto;
+  line-height: 30px;
 }
 
 .application .visit-btn{
@@ -432,6 +436,7 @@ hr{
 .prog-nav{
   text-align: center;
   font-size: 15px;
+  background: white;
 }
 
 /*---------events page---------------*/
@@ -481,7 +486,7 @@ hr{
 }
 .slide::-webkit-scrollbar {
   width: 10px;
-  height: 10px;
+  height: 5px;
 }
 .slide::-webkit-scrollbar-thumb {
   background: black;
@@ -538,7 +543,7 @@ hr{
   font-size: 15px;
 }
 
-.contact-col form input, .contact-col textarea{
+.contact-col form input, .contact-col textarea, .search-course{
   width: 100%;
   padding: 15px;
   margin-bottom: 15px;
@@ -559,6 +564,43 @@ hr{
 .research-slide{
   grid-template-columns: 100% 100% !important;
 }
+
+
+/* ----------------------- UNDERGRADUATE PAGE --------------------- */
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 90px;
+}
+.col{
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* --------------------- MPHIL PAGE ----------------------- */
+
+.courses .about-img{
+  height: 480px;
+}
+.img-fluid{
+  height:700px;
+
+}
+.phd-h{
+  padding-top: 40px;
+}
+/* .courses{ */
+  padding: 40px;
+}
+.u-courses .container{
+  padding: 40px;
+}
+.courses a{
+  color: #4b0808;
+}
+
 
 
 /* ------------------- MEDIA QUERIES ------------------------ */
