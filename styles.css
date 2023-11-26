@@ -128,7 +128,7 @@ a{
   background-color: rgb(238, 250, 215);
   margin: 20px;
   border-radius: 10px;
-  transition: 0.5s;
+  transition: 0.9s;
 }
 .programmes-header{
   padding: 30px;
@@ -242,7 +242,7 @@ a{
   margin-bottom:5%;
   text-align: left;
   background: white;
-  transition: 0.6s;
+  transition: 0.9s;
 }
 .short-course:hover{
   transform: scale(1.05);
