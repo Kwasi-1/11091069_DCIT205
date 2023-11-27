@@ -1,665 +1,666 @@
 *{
-  margin: 0; 
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  /* box-sizing: border-box; */
-}
-body, html {
-  height: 100%;
-  margin: 0;
-}
-a{
-  color: white;
-  text-decoration: none;
-}
-.home-page{
-  background: linear-gradient(to right, rgb(0, 9, 61,0.7), rgba(46, 11, 0, 0.7)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
-  min-height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative ;
-
-}
-
-.navbar{
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: center;
-}
-.icon{
-  border: 2px solid black;
-  border-radius: 10px;
-  background: #9b9a9a;
-  transition: 0.4s;
-}
-.icon:hover{
-  /* background: #9b9a9a; */
-  opacity: 0.5;
-}
-.logo{
-  width: 150px;
-  
-}
-.nav{
-  flex: 1;
-  text-align: right;
-}
-
-.nav-item{
-  list-style-type: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-
-}
-.nav-links{
-  color: antiquewhite;
-  text-decoration: none;
-  font-size: 13px;
-}
-.nav-item::after {
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: blue;
-  display: block;
-  transition: 0.45s;
-}
-.nav-item:hover::after{
-  width: 100%;
-}
-
-/* text */  
-.text {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 90%;
-  position: absolute;
-  color:white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-transform: capitalize;
-  text-align: center;
-}
-.text-header{
-  font-size: 50px;
-}
-.text p{
-  margin: 10px 0 40px;
-  font-size: 14px;
-}
-.visit-btn{
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid white;
-  padding: 12px 34px;
-  font-size: 13px ;
-  background: transparent;
-  position:relative;
-  transition: 0.5s;
-}
-.visit-btn:hover{
-  border: 1px solid #f44335;
-  background: #f44335;
-
-}
-.navbar .fa-solid{
-  display: none;
-}
-
-/* programmes styles */
-
-.what-we-offer{
-  background-color:white;
-  padding:100px 50px;
-  text-align: center;
-}
-.programmes-title{
-  margin-bottom: 40px;
-}
-.programmes-section{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.programmes{
-  background-color: rgb(238, 250, 215);
-  margin: 20px;
-  border-radius: 10px;
-  transition: 0.9s;
-}
-.programmes-header{
-  padding: 30px;
-}
-.programmes-body{
-  padding: 0 20px 20px;
-
-}
-.programmes-link{
-  color: gray;
-  text-decoration: none;
-  font-size: 14px;
-}
-.programmes-header_link{
-  color: black;
-  font-weight: bolder;
-  text-decoration: none;
-}
-.read-more_link{
-  display: block;
-  padding-top: 15px;
-}
-.programmes:hover, .active{
-  background-color: rgb(81, 97, 52);
-  transform: scale(1.05);
-}
-
-/* events  and about styles*/
-
-.about-us, .events-section{
-  width: 85%;
-  margin:auto;
-  padding-top: 80px;
-  padding-bottom: 50px;
-  font-size: 15px;
-}
-.about{
-  text-align: center;
-}
-.row, .events{
-  display: flex;
-}
-.about-col, .events-col{
-  flex-basis: 48%;
-  padding: 30px 20px;
-  height: 400px;
-}
-.events-col .fa-solid{
-  font-size: 65px;
-  color: rgb(10, 10, 10);
-}
-.about-img, .events-img{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-.about-header, .events-header{
-  padding-top: 10px;
-  margin-top: 70px;
-}
-.events-body{
-  padding: 15px 0 0;
-}
-.below, .about-body {
-  padding: 15px 0 25px;
-}
-.explore-btn{
-  border: 1px solid #c98c1b;
-  background: transparent;
-  color:#c98c1b;
-}
-.explore-btn:hover{
-  color: white;
-}
-.events-h{
-  margin-top: 10px;
-  padding-left: 15px;
-  text-transform: uppercase;
-  font-size: 2.9rem;
-}
-.about-h{
-  margin-top:40px;
-}
-
-/*------------------short courses---------------------  */
-
-.prog-nav .programmes-header{
-  padding: 25px;
-}
-.programmes-header_link{
-  padding:25px 8px;
-}
-.short{
-  background-color: aliceblue;
-}
-.application{
-  width: 85%;
-  margin: auto;
-  text-align:center;
-  padding-top:100px;
-  font-size: 15px;
-}
-.short-courses{
-  display: flex;
-  gap: 20px;
-  margin-top: 50px;
-}
-.short-course{
-  flex-basis: 31%;
-  border-radius:10px;
-  margin-bottom:5%;
-  text-align: left;
-  background: white;
-  transition: 0.9s;
-}
-.short-course:hover{
-  transform: scale(1.05);
-  /* background-color: rgb(37, 62, 68); */
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-}
-.short-course img{
-  width: 100%;
-  border-radius:10px 10px 0 0;
-  height: 200px;
-}
-.short-course p{
-  padding: 0;
-  margin: 10px 0;
-}
-.short-course_body{
-  margin-top: 16px;
-  padding: 0 10px 10px;
-  align-items: center;
-  color: #9b9a9a;
-}
-.short-course_link{
-  text-decoration: none;
-  font-weight: bold;
-  color: rgb(6, 46, 6);
-}
-
-
-/* footer styles */
-footer .logo{
-  width: 150px;
-  margin-bottom: 30px;
-}
-footer{
-  width:100%;
-  position: absolute;
-  /* bottom: 0; */
-  background: linear-gradient(to right, #00093c, #2d0b00);
-  color: #fff;
-  padding: 100px 0 30px;
-  /* border-top-left-radius: 125px; */
-  font-size: 13px;
-  line-height: 20px;
-}
-.upper-footer, .lower-footer{
-  width:85%;
-  margin: auto;
-  
-}
-.upper-footer{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.footer-col{
-  flex-basis: 25%;
-  padding: 10px;
-}
-.footer-col:nth-child(2), .footer-col:nth-child(3){
-  flex-basis:15%;
-}
-.footer-col h3{
-  width: fit content;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-.email-id{
-  width: fit-content;
-  border-bottom: 1px solid #ccc;
-  margin: 20px 0;
-}
-.footer-links{
-  display: block;
-  text-decoration: none;
-  margin-bottom: 10px;
-  color: white;
-}
-footer form{
-  padding-bottom: 15px;
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 50px;
-}
-form .fa-regular{
-  font-size: 18px;
-  margin-right: 10px;
-}
-footer form input{
-  width:100%;
-  background: transparent;
-  color: #ccc;
-  border: 0;
-  outline: none;
-}
-footer form button{
-  background: transparent;
-  border: 0;
-  outline: none;
-
-}
-footer form button .fa-solid{
-  font-size: 16px;
-  color: #ccc;
-
-}
-.socials-links{
-  display: inline-block ;
-  text-decoration: none;
-  color: white;
-}
-.socials .fa-brands{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-  color: black;
-  background-color: white;
-  margin-right: 15px;
-}
-hr{
-  width: 90%;
-  margin: 20px auto;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-}
-.copyright{
-  padding: 10px;
-}
-
-/* other pages */
-.other-page{
-  background: linear-gradient(to right, rgb(0, 9, 61,0.7), rgba(46, 11, 0, 0.7)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
-  min-height: 50vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative ;
-
-}
-
-
-/*--------------about page---------------- */
-
-
-/*---------------short courses-----------------*/
-.application{
-  padding-bottom: 80px;
-  
-}
-
-.appli-f{
-  padding: 50px 0;
-  color: white;
-  /* padding-top: 50px; */
-  background: linear-gradient(to right, rgb(0, 9, 61,0.7), rgba(46, 11, 0, 0.7)),url("https://isbatuniversity.ac.ug/wp-content/uploads/2021/08/Study-Tips-to-Become-a-Better-Test-Taker-Florida-Career-College.jpg");
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-}
-.appli-f h1{
-  font-size: 3rem;
-  text-transform: capitalize;
-}
-.appli-f p{
-  padding: 15px 0;
-  width:70%;
-  margin: auto;
-  line-height: 30px;
-}
-
-.application .visit-btn{
-  margin:10px;
-  background-color: rgba(0, 0, 255, 0.473);
-  border: 1px solid rgba(0, 0, 255, 0.473);
-}
-.application .visit-btn:hover{
-  /* transform: scale(1.08); */
-  background-color: rgba(0, 0, 255, 0.9);
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-}
-.appli-f .visit-btn{
-  /* font-weight: bold; */
-  font-size: 18px;
-}
-.prog-nav{
-  text-align: center;
-  font-size: 15px;
-  background: white;
-}
-
-/*---------events page---------------*/
-.events-col{
-  padding: 0;
-}
-.align{
-  text-align: center;
-}
-.events-page .row{
-  /* border: 1px solid black; */
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-  margin: auto;
-  border-radius: 5px;
-  /* height: 300px; */
-}
-.row img{
-  height: 100%;
-  width: 100%;
-  border-radius: 5px 0 0 5px  ;
-  object-fit: cover;
-}
-.events-page h1{
-  font-size: 2rem;
-}
-.padding{
-  padding-left: 30px;
-  /* padding-top: 70px; */
-}
-.coursel-contanier{
-  /* width: 80%; */
-  margin: auto;
-}
-.slide{
-  display: grid;
-  grid-template-columns: 100% 100% 100% ;
-  column-gap: 50px;
-  width: 100%;
-  border-radius: 5px;
-  scroll-snap-type: x mandatory;
-  border: 1px solid black;
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-  /* height: 500px; */
-  overflow-y: hidden;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-.slide::-webkit-scrollbar {
-  width: 10px;
-  height: 5px;
-}
-.slide::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-.slide::-webkit-scrollbar-track {
-  background: transparent;
-}
-.slide .row{
-  /* display: inline-block !important; */
-  scroll-snap-align: start;
-  width:100%
-}
-
-
-
-/*-------- contact us page --------- */
-
-.location{
-  width: 80%;
-  margin:auto;
-  padding:80px 0;
-}
-.location iframe{
-  width: 100%;
-}
-.contact-us{
-  width: 80%;
-  margin:auto;
-  margin-bottom: 80px;
-}
-.contact-col{
-  flex-basis:48%;
-  margin-bottom: 30px;
-}
-.contact-col div{
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-.contact-col div .fa{
-  font-size: 28px;
-  color:#f44335;
-  margin: 10px;
-  margin-right: 30px;
-}
-.contact-col div h5{
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: #555;
-  font-weight: 400;
-}
-.contact-col div p{
-  font-size: 15px;
-}
-
-.contact-col form input, .contact-col textarea, .search-course{
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 15px;
-  border:1px solid #ccc ;
-  outline: none;
-}
-.form-btn{
-  text-decoration: none;
-  border: 1px solid #f44335;
-  color: #f44335;
-  padding: 12px 34px;
-  font-size: 13px ;
-  background: transparent;
-  position:relative;
-}
-
-/* ---------------------- RESEARCH PAGE ---------------------- */
-.research-slide{
-  grid-template-columns: 100% 100% !important;
-}
-
-
-/* ----------------------- UNDERGRADUATE PAGE --------------------- */
-
-.application table{
-  text-align: left;
-}
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 90px;
-}
-.col{
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* --------------------- MPHIL PAGE ----------------------- */
-
-.courses .about-img{
-  height: 480px;
-}
-.img-fluid{
-  height:700px;
-
-}
-.phd-h{
-  padding-top: 40px;
-}
-
-.u-courses .container{
-  padding: 40px;
-}
-.courses a{
-  color: #4b0808;
-  padding: 15px;
-  width: 100%;
-  
-  /* position: relative; */
-}
-dt .active{
-  background: transparent;
-  
-}
-.courses dt{
-  padding: 15px;
-  margin: 5px 0;
-  text-align: center;
-  width: 100%;
-  background-color: rgb(81, 97, 52);
-}
-
-
-
-/* ------------------- MEDIA QUERIES ------------------------ */
-
-@media(max-width: 700px){
-  
-
-  .text h1{
-    font-size: 20px;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
   }
-  .nav-item{
-    display: block;
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  .home-page{
+    background: linear-gradient(to right, rgb(0, 9, 61,0.7), rgba(46, 11, 0, 0.7)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative ;
+  
+  }
+  
+  .navbar{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon{
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #9b9a9a;
+    transition: 0.4s;
+  }
+  .icon:hover{
+    /* background: #9b9a9a; */
+    opacity: 0.5;
+  }
+  .logo{
+    width: 150px;
+    
   }
   .nav{
-    position: fixed;
-    background: #f44335;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-  .navbar .fa-solid{
-    display: block;
-    color: white;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-list{
-    padding:30px;
-  }
-
-  /* short course */
-  .short{
-    font-size: 20px;
-  }
-  .programmes{
-    grid-template-columns: 1fr;
+    flex: 1;
+    text-align: right;
   }
   
-}
+  .nav-item{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  
+  }
+  .nav-links{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .nav-item::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: blue;
+    display: block;
+    transition: 0.45s;
+  }
+  .nav-item:hover::after{
+    width: 100%;
+  }
+  
+  /* text */  
+  .text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 90%;
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .text-header{
+    font-size: 50px;
+  }
+  .text p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+  }
+  .visit-btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px ;
+    background: transparent;
+    position:relative;
+    transition: 0.5s;
+  }
+  .visit-btn:hover{
+    border: 1px solid #f44335;
+    background: #f44335;
+  
+  }
+  .navbar .fa-solid{
+    display: none;
+  }
+  
+  /* programmes styles */
+  
+  .what-we-offer{
+    background-color:white;
+    padding:100px 50px;
+    text-align: center;
+  }
+  .programmes-title{
+    margin-bottom: 40px;
+  }
+  .programmes-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .programmes{
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.7s;
+  }
+  .programmes-header{
+    padding: 30px;
+  }
+  .programmes-body{
+    padding: 0 20px 20px;
+  
+  }
+  .programmes-link{
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .programmes-header_link{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  .read-more_link{
+    display: block;
+    padding-top: 15px;
+  }
+  .programmes:hover, .active{
+    background-color: rgb(52, 77, 97);
+    transform: scale(1.05);
+    color: white !important;
+  }
+  
+  /* events  and about styles*/
+  
+  .about-us, .events-section{
+    width: 85%;
+    margin:auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: 15px;
+  }
+  .about{
+    text-align: center;
+  }
+  .row, .events{
+    display: flex;
+  }
+  .about-col, .events-col{
+    flex-basis: 48%;
+    padding: 30px 20px;
+    height: 400px;
+  }
+  .events-col .fa-solid{
+    font-size: 65px;
+    color: rgb(10, 10, 10);
+  }
+  .about-img, .events-img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .about-header, .events-header{
+    padding-top: 10px;
+    margin-top: 70px;
+  }
+  .events-body{
+    padding: 15px 0 0;
+  }
+  .below, .about-body {
+    padding: 15px 0 25px;
+  }
+  .explore-btn{
+    border: 1px solid #c98c1b;
+    background: transparent;
+    color:#c98c1b;
+  }
+  .explore-btn:hover{
+    color: white;
+  }
+  .events-h{
+    margin-top: 10px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+  }
+  .about-h{
+    margin-top:40px;
+  }
+  
+  /*------------------short courses---------------------  */
+  
+  .prog-nav .programmes-header{
+    padding: 25px;
+  }
+  .programmes-header_link{
+    padding:25px 8px;
+  }
+  .short{
+    background-color: aliceblue;
+  }
+  .application{
+    width: 85%;
+    margin: auto;
+    text-align:center;
+    padding-top:100px;
+    font-size: 15px;
+  }
+  .short-courses{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .short-course{
+    flex-basis: 31%;
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align: left;
+    background: white;
+    transition: 0.9s;
+  }
+  .short-course:hover{
+    transform: scale(1.05);
+    /* background-color: rgb(37, 62, 68); */
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  .short-course img{
+    width: 100%;
+    border-radius:10px 10px 0 0;
+    height: 200px;
+  }
+  .short-course p{
+    padding: 0;
+    margin: 10px 0;
+  }
+  .short-course_body{
+    margin-top: 16px;
+    padding: 0 10px 10px;
+    align-items: center;
+    color: #9b9a9a;
+  }
+  .short-course_link{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(6, 46, 6);
+  }
+  
+  
+  /* footer styles */
+  footer .logo{
+    width: 150px;
+    margin-bottom: 30px;
+  }
+  footer{
+    width:100%;
+    position: absolute;
+    /* bottom: 0; */
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    /* border-top-left-radius: 125px; */
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .upper-footer, .lower-footer{
+    width:85%;
+    margin: auto;
+    
+  }
+  .upper-footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer-col{
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  .footer-col:nth-child(2), .footer-col:nth-child(3){
+    flex-basis:15%;
+  }
+  .footer-col h3{
+    width: fit content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  .footer-links{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: white;
+  }
+  footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  footer form input{
+    width:100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  footer form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+  
+  }
+  footer form button .fa-solid{
+    font-size: 16px;
+    color: #ccc;
+  
+  }
+  .socials-links{
+    display: inline-block ;
+    text-decoration: none;
+    color: white;
+  }
+  .socials .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    margin-right: 15px;
+  }
+  hr{
+    width: 90%;
+    margin: 20px auto;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .copyright{
+    padding: 10px;
+  }
+  
+  /* other pages */
+  .other-page{
+    background: linear-gradient(to right, rgb(0, 9, 61,0.7), rgba(46, 11, 0, 0.7)),url("https://citinewsroom.com/wp-content/uploads/2019/08/01-University-of-Ghana-DSC02643.jpg"); 
+    min-height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative ;
+  
+  }
+  
+  
+  /*--------------about page---------------- */
+  
+  
+  /*---------------short courses-----------------*/
+  .application{
+    padding-bottom: 80px;
+    
+  }
+  
+  .appli-f{
+    padding: 50px 0;
+    color: white;
+    /* padding-top: 50px; */
+    background: linear-gradient(to right, rgb(0, 9, 61,0.7), rgba(46, 11, 0, 0.7)),url("https://isbatuniversity.ac.ug/wp-content/uploads/2021/08/Study-Tips-to-Become-a-Better-Test-Taker-Florida-Career-College.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .appli-f h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  .appli-f p{
+    padding: 15px 0;
+    width:70%;
+    margin: auto;
+    line-height: 30px;
+  }
+  
+  .application .visit-btn{
+    margin:10px;
+    background-color: rgba(0, 0, 255, 0.473);
+    border: 1px solid rgba(0, 0, 255, 0.473);
+  }
+  .application .visit-btn:hover{
+    /* transform: scale(1.08); */
+    background-color: rgba(0, 0, 255, 0.9);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  .appli-f .visit-btn{
+    /* font-weight: bold; */
+    font-size: 18px;
+  }
+  .prog-nav{
+    text-align: center;
+    font-size: 15px;
+    background: white;
+  }
+  
+  /*---------events page---------------*/
+  .events-col{
+    padding: 0;
+  }
+  .align{
+    text-align: center;
+  }
+  .events-page .row{
+    /* border: 1px solid black; */
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    border-radius: 5px;
+    /* height: 300px; */
+  }
+  .row img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 0 0 5px  ;
+    object-fit: cover;
+  }
+  .events-page h1{
+    font-size: 2rem;
+  }
+  .padding{
+    padding-left: 30px;
+    /* padding-top: 70px; */
+  }
+  .coursel-contanier{
+    /* width: 80%; */
+    margin: auto;
+  }
+  .slide{
+    display: grid;
+    grid-template-columns: 100% 100% 100% ;
+    column-gap: 50px;
+    width: 100%;
+    border-radius: 5px;
+    scroll-snap-type: x mandatory;
+    border: 1px solid black;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    /* height: 500px; */
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .slide::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+  .slide::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .slide::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slide .row{
+    /* display: inline-block !important; */
+    scroll-snap-align: start;
+    width:100%
+  }
+  
+  
+  
+  /*-------- contact us page --------- */
+  
+  .location{
+    width: 80%;
+    margin:auto;
+    padding:80px 0;
+  }
+  .location iframe{
+    width: 100%;
+  }
+  .contact-us{
+    width: 80%;
+    margin:auto;
+    margin-bottom: 80px;
+  }
+  .contact-col{
+    flex-basis:48%;
+    margin-bottom: 30px;
+  }
+  .contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .contact-col div .fa{
+    font-size: 28px;
+    color:#f44335;
+    margin: 10px;
+    margin-right: 30px;
+  }
+  .contact-col div h5{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+  }
+  .contact-col div p{
+    font-size: 15px;
+  }
+  
+  .contact-col form input, .contact-col textarea, .search-course{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border:1px solid #ccc ;
+    outline: none;
+  }
+  .form-btn{
+    text-decoration: none;
+    border: 1px solid #f44335;
+    color: #f44335;
+    padding: 12px 34px;
+    font-size: 13px ;
+    background: transparent;
+    position:relative;
+  }
+  
+  /* ---------------------- RESEARCH PAGE ---------------------- */
+  .research-slide{
+    grid-template-columns: 100% 100% !important;
+  }
+  
+  
+  /* ----------------------- UNDERGRADUATE PAGE --------------------- */
+  
+  .application table{
+    text-align: left;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 90px;
+  }
+  .col{
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  /* --------------------- MPHIL PAGE ----------------------- */
+  
+  .courses .about-img{
+    height: 480px;
+  }
+  .img-fluid{
+    height:700px;
+  
+  }
+  .phd-h{
+    padding-top: 40px;
+  }
+  
+  .u-courses .container{
+    padding: 40px;
+  }
+  .courses a{
+    color: #4b0808;
+    padding: 15px;
+    width: 100%;
+    
+    /* position: relative; */
+  }
+  dt .active{
+    background: transparent;
+    
+  }
+  .courses dt{
+    padding: 15px;
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(52, 77, 97);
+  }
+  
+  
+  
+  /* ------------------- MEDIA QUERIES ------------------------ */
+  
+  @media(max-width: 700px){
+    
+  
+    .text h1{
+      font-size: 20px;
+    }
+    .nav-item{
+      display: block;
+    }
+    .nav{
+      position: fixed;
+      background: #f44335;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    .navbar .fa-solid{
+      display: block;
+      color: white;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .nav-list{
+      padding:30px;
+    }
+  
+    /* short course */
+    .short{
+      font-size: 20px;
+    }
+    .programmes{
+      grid-template-columns: 1fr;
+    }
+    
+  }
