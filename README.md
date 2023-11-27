@@ -17,7 +17,7 @@ Welcome to the website of the Department of Computer Science! The goal of this p
  ## home page
 ![home page](<screenshots/home page.png>)
 
- ##  fauclty page
+ ##  faculty page
 ![faculty page](<screenshots/faculty page.png>)
 
  ##  about page
@@ -36,13 +36,13 @@ Welcome to the website of the Department of Computer Science! The goal of this p
 ![short course page](<screenshots/short courses page.png>)
 
  ##  undergrad page
-  
+![undergrad page](<screenshots/undergrad page.png>)  
 
  ## mphil page
 ![mphil page](<screenshots/mphil page.png>)
 
  ##  phd page
-
+![phd page](<screenshots/phd page.png>)
 
 
 
@@ -56,4 +56,4 @@ During the course of developing this project, I acquired practical knowledge in:
   Creating, arranging, and displaying content on a webpage in an efficient manner.
 
 Through this project, I was able to build skills that are necessary in the web development profession and apply my academic knowledge in a practical setting.
-Feel free to make suggestions or comments regarding the codebase; I believe this website does a decent job of reflecting the Department of Computer Science.
+
