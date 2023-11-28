@@ -125,6 +125,7 @@
   .programmes-section{
     
     margin-top: 2% ;
+    padding: 0 1.5%;
     display: flex;
     justify-content: space-between;
   }
@@ -697,7 +698,6 @@
       margin-bottom:15%;
     }
     .programmes-header, .acive{
-      transform: none;
       border-radius: 0;
     }
     /* ------------undergraduate page---------------- */
