@@ -125,7 +125,7 @@
   .programmes-section{
     
     margin-top: 2% ;
-    padding: 0 1.5%;
+    padding: 0 2%;
     display: flex;
     justify-content: space-between;
   }
@@ -180,6 +180,7 @@
   }
   .row, .events{
     display: flex;
+    justify-content: space-between;
   }
   .about-col, .events-col{
     flex-basis: 48%;
@@ -600,13 +601,14 @@
   }
   
   
-  /* --------------------- MPHIL PAGE ----------------------- */
+  /* --------------------- MPhil PAGE and PhD PAGE ----------------------- */
   
   .courses .about-img{
     height: 480px;
   }
   .img-fluid{
-    height:700px;
+    /* height:100%; */
+    width: 100%;
   
   }
   .phd-h{
@@ -700,6 +702,7 @@
     .programmes-header, .acive{
       border-radius: 0;
     }
+
     /* ------------undergraduate page---------------- */
     .grid{
       grid-template-columns: 1fr;
@@ -708,4 +711,11 @@
       font-size: 14px;
     }
     
+    /* ----------------- phd page------------------ */
+    .pdh-width{
+      width: 90%;
+    }
+    .grid .application{
+      width: 100%;
+    }
   }
