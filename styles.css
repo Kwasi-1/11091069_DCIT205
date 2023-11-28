@@ -101,6 +101,7 @@
     background: transparent;
     position:relative;
     transition: 0.5s;
+    margin-bottom: 2%;
   }
   .visit-btn:hover{
     border: 1px solid #f44335;
@@ -122,14 +123,19 @@
     margin-bottom: 40px;
   }
   .programmes-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    margin-top: 2% ;
+    display: flex;
+    justify-content: space-between;
   }
   .programmes{
     background-color: aliceblue;
-    margin: 20px;
+    margin-bottom: 2% ;
     border-radius: 10px;
     transition: 0.7s;
+    flex-basis: 23%;
+    box-sizing: border-box;
+    padding: 20px 12px;
   }
   .programmes-header{
     padding: 30px;
@@ -184,7 +190,7 @@
     color: rgb(10, 10, 10);
   }
   .about-img, .events-img{
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     margin: 0;
   }
@@ -237,11 +243,11 @@
   }
   .short-courses{
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
     margin-top: 50px;
   }
   .short-course{
-    flex-basis: 31%;
+    flex-basis: 24%;
     border-radius:10px;
     margin-bottom:5%;
     text-align: left;
@@ -251,7 +257,7 @@
   .short-course:hover{
     transform: scale(1.05);
     /* background-color: rgb(37, 62, 68); */
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.25);
   }
   .short-course img{
     width: 100%;
@@ -512,7 +518,7 @@
   /*-------- contact us page --------- */
   
   .location{
-    width: 80%;
+    width: 85%;
     margin:auto;
     padding:80px 0;
   }
@@ -564,6 +570,10 @@
     font-size: 13px ;
     background: transparent;
     position:relative;
+  }
+  .form-btn:hover{
+    background: #f44335;
+    color: white;
   }
   
   /* ---------------------- RESEARCH PAGE ---------------------- */
@@ -658,12 +668,43 @@
       padding:30px;
     }
   
-    /* short course */
+
+    /* -------programmes section-------- */
+    .programmes-section{
+      flex-direction: column;
+      margin-top: 5%;
+    }
+    .programmes{
+      margin-bottom: 5%;
+    }
+
+    /* -------------events page-------------- */
+    .row, .events{
+      flex-direction: column;
+    }
+    .about-img, .events-img{
+      width:100%;
+    }
+    /*---------- short course------------- */
     .short{
       font-size: 20px;
     }
-    .programmes{
+    .short-courses{
+      flex-direction: column; 
+    }
+    .short-course{
+      margin-bottom:15%;
+    }
+    .programmes-header, .acive{
+      transform: none;
+      border-radius: 0;
+    }
+    /* ------------undergraduate page---------------- */
+    .grid{
       grid-template-columns: 1fr;
+    }
+    table{
+      font-size: 14px;
     }
     
   }
