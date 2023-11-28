@@ -245,6 +245,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    gap: 1.7%;
   }
   .short-course{
     flex-basis: 24%;
@@ -252,7 +253,7 @@
     margin-bottom:5%;
     text-align: left;
     background: white;
-    transition: 0.9s;
+    transition: 1s;
   }
   .short-course:hover{
     transform: scale(1.05);
